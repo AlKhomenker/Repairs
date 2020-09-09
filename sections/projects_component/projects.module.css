@@ -1,0 +1,140 @@
+.projects {
+    margin: -620px auto 200px;
+    position: relative;
+    top: 0;
+    z-index:0;
+    background-color: #272727;
+    transition:  margin 1s;
+}
+.projects_active{
+    margin: 0 auto 200px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: #272727;
+    transition:  margin 1s;
+}
+.slider{
+    width: 80%;
+    margin: 0 auto;
+}
+.img_container{
+    width: 80%;
+    height: 600px;
+    position: relative;
+    margin: 100px auto;
+}
+.img{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: block;
+}
+
+.img_active{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 1;
+    transition: opacity 4s;
+}
+
+.block{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blocks_items{
+    margin: 100px auto;
+}
+
+.item_info{
+    width: 20%;
+    height: 250px;
+    margin: 0;
+    padding:10px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1570px) {
+    .projects {
+        margin: -630px auto 200px;
+    }
+    .blocks_items{
+        margin: 40px auto;
+    }
+    .item_info{
+        width: 35%;
+        height: 300px;
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 1499px) {
+    .projects {
+        margin: -1070px auto 200px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .projects {
+        margin: -1950px auto 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        margin: -725px auto 200px;
+    }
+    .blocks_items{
+        margin: 40px auto;
+    }
+    .item_info{
+        width: 40%;
+        height:240px;
+        margin: 40px 0;
+    }
+    .topic{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .projects {
+        margin: -1400px auto 200px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .projects {
+        margin: -1250px auto 200px;
+    }
+    .block{
+        justify-content: center;
+    }
+    .item_info{
+        width: 100%;
+        height: 150px;
+        margin: 20px 0;
+    }
+    .blocks_items{
+        margin: 20px auto;
+    }
+}

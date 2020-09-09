@@ -1,0 +1,163 @@
+.App {
+  text-align: center;
+  color: #FFF4DE;
+  font-family: 'Roboto', sans-serif;
+  background-color: #272727;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF4DE;
+}
+::-webkit-scrollbar-thumb {
+  background: #C6A47E;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.block_lang{
+  position: fixed;
+  z-index: 10;
+  top: 100px;
+}
+.lang{
+  border-radius: 5px;
+  border: 3px solid #FFF4DE;
+  width: 50px;
+  height: 30px;
+  margin: 20px 10px;
+  padding-top: 15%;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.lang:hover,.lang_active{
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  margin: 20px 10px;
+  padding-top: 15%;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid transparent;
+  background-color: #C6A47E;
+}
+
+h1{
+  text-transform: uppercase;
+  margin: 0;
+  padding: 250px 0 0;
+  font-size: 65px;
+}
+h2{
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+}
+h3{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0;
+}
+h4{
+  font-size: 25px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+h5{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+}
+h6{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+p{
+  font-size: 20px;
+}
+
+hr{
+  width: 80%;
+  border: 2px solid #FFF4DE;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1560px) {
+  h6{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1260px) {
+ a{
+   font-size: 12px;
+ }
+}
+
+@media screen and (max-width: 1024px) {
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .lang{
+    width: 30px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .lang:hover,.lang_active{
+    width: 30px;
+    height: 25px;
+    font-size: 12px;
+  }
+  h3{
+    font-size: 17px;
+  }
+  p{
+    font-size: 15px;
+  }
+  hr{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1{
+    padding: 150px 0 0;
+  }
+  h2{
+    font-size: 30px;
+    width: 100%;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 15px;
+  }
+  .lang{
+    margin: 20px 5px;
+  }
+  .lang:hover,.lang_active{
+    margin: 20px 5px;
+  }
+}

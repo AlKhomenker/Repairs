@@ -1,0 +1,117 @@
+.footer_block{
+    background-color: #927351;
+    position: relative;
+    top: 0;
+    z-index:0;
+    margin-top: -550px;
+    transition: margin-top 1s;
+}
+.footer_block_active{
+    background-color: #927351;
+    position: relative;
+    top: 0;
+    z-index:0;
+    margin-top: 0;
+    transition: margin-top 1s;
+}
+.btn{
+    margin: 50px auto;
+    padding: 50px 0;
+}
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #272727;
+}
+.block{
+    width: 90%;
+    margin: 100px auto 0;
+    padding: 100px 0 50px;
+    border-bottom: 3px solid #C6A47E;
+    display: flex;
+    justify-content: space-between;
+}
+.txt{
+    width: 450px;
+}
+.bold{
+     font-weight: bold;
+     padding: 40px 0 20px;
+ }
+.left{
+   text-align: left;
+    padding: 0 10px;
+}
+.right{
+    text-align: right;
+    padding: 0 10px;
+}
+.icons{
+    font-size: 30px;
+}
+.icon{
+    font-size: 20px;
+}
+.icons_socislMedia{
+    text-align: center;
+    font-size: 50px;
+    color: #C6A47E;
+    margin: 10px 25px;
+    cursor: pointer;
+}
+.icons_socislMedia:hover{
+    color: #FFF4DE;
+}
+.bottom{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.div{
+    width: 25%;
+}
+
+.div a i{
+    float: left;
+    color: #C6A47E;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.div a i:hover{
+   color: #FFF4DE;
+}
+
+@media screen and (max-width: 1645px) {
+    .footer_block{
+        margin-top: -550px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .block{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer_block{
+        margin-top: -1550px;
+    }
+    .icon{
+        font-size: 15px;
+    }
+    .div{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer_block{
+        margin-top: -1350px;
+    }
+}

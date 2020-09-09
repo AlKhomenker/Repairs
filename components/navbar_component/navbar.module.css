@@ -1,0 +1,113 @@
+.hamburger{
+    display: none;
+}
+.burger{
+    display: none;
+}
+.navBar{
+    background-color: rgba(39 ,39 ,39 ,0.9);
+    border-bottom: 3px solid #ECE1D1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.ul_NavBar{
+    width: 80%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.img_logo{
+    width: auto;
+    height: 30px;
+}
+
+@media screen and (max-width: 1298px) {
+    .img_logo{
+        width: auto;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 1031px) {
+    .img_logo{
+        width: auto;
+        height: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navBar{
+        display: none;
+    }
+    .ul_NavBar{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .burger{
+        color: #C6A47E;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        font-size: 40px;
+        display: block;
+    }
+
+    .hamburger{
+        background-color: rgba(39 ,39 ,39 ,0.9);
+        width: 50%;
+        display: block;
+        color: #C6A47E;
+        text-align: left;
+        position: fixed;
+        top: 0;
+        left: 10px;
+        z-index: 10;
+        font-size: 40px;
+        transition: margin 0.8s;
+        margin: 0 0 0 -500px;
+    }
+    .hamburger_active{
+        background-color: rgba(39 ,39 ,39 ,0.9);
+        border-radius: 5px;
+        margin: 0 0 0 -20px;
+        padding-left: 10px;
+        width: 50%;
+        display: block;
+        color: #C6A47E;
+        text-align: left;
+        position: fixed;
+        top: 0;
+        left: 10px;
+        z-index: 10;
+        font-size: 40px;
+        transition: margin 0.8s;
+    }
+    .hamburger_menu{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img_logo{
+        width: auto;
+        height: 35px;
+        padding: 0 10px;
+    }
+    i{
+        padding-left: 10px;
+        display: none;
+        cursor: pointer;
+    }
+    i:hover{
+       color: #FFF4DE;
+    }
+}
+@media screen and (max-width: 360px) {
+    .hamburger_menu{
+      padding: 0 10px;
+    }
+}

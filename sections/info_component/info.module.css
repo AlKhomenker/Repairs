@@ -1,0 +1,234 @@
+.info{
+    margin: 0;
+    padding: 0 0 100px 0;
+}
+.info_block{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_block_items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item_info{
+    width: 400px;
+    height: 400px;
+    margin:20px auto;
+    padding:0;
+    position: relative;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.txt_info{
+    width: 60%;
+    text-align: left;
+    margin-top: 100px;
+}
+.txt_info_revers{
+    width: 60%;
+    text-align: right;
+    margin-top: 100px;
+}
+
+.img_info{
+    width: 400px;
+    height: auto;
+    margin-top: 100px;
+}
+.popup{
+/*    background-color: rgba(39,39,39,0.8);*/
+    background-color: #ECE1D1;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    color: #C6A47E;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s;
+}
+.dot{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 40px 10px;
+    background-color:#C6A47E;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot_active, .dot:hover {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 40px 10px;
+    background-color: #FFF4DE;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.arrows{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    right: 290px;
+    z-index: 20;
+    font-size: 40px;
+}
+.arrows i:hover{
+    color: #FFF4DE;
+    cursor: pointer;
+}
+
+.times{
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 20;
+}
+
+.times:hover{
+  color: #FFF4DE;
+}
+
+@media screen and (max-width: 1500px) {
+    .arrows{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 45%;
+        right: 150px;
+        z-index: 20;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img_info{
+        width: 300px;
+        height: auto;
+        margin-top: 100px;
+    }
+    .arrows{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 45%;
+        right: 50px;
+        z-index: 20;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .popup{
+        width: 100%;
+        height: auto;
+    }
+    .arrows{
+        width: 95%;
+        right: 25px;
+        font-size: 20px;
+    }
+
+    .times{
+        font-size: 20px;
+        top: 0;
+        right: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info{
+        padding: 0;
+    }
+    .img_info{
+        width: 200px;
+        height: auto;
+        margin-top: 150px;
+    }
+    .item_info{
+        width: 250px;
+        height: 250px;
+        margin: 40px 0;
+    }
+}
+@media screen and (max-width: 650px) {
+    .info_block_items{
+        justify-content: center;
+    }
+    .item_info{
+        margin: 40px 10px;
+    }
+    .info_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .info_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item_info{
+        margin: 20px 0;
+    }
+    .img_info{
+        width: 250px;
+        margin-top: 50px;
+    }
+    .txt_info{
+        width: 90%;
+        text-align: center;
+    }
+    .txt_info_revers{
+        width: 90%;
+    }
+    .info_block_items{
+        justify-content: center;
+    }
+    .arrows{
+        right: 17px;
+    }
+    .dot{
+        height: 15px;
+        width: 15px;
+    }
+    .dot_active, .dot:hover {
+        height: 15px;
+        width: 15px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .dot{
+        height: 15px;
+        width: 15px;
+        margin: 20px 10px;
+    }
+    .dot_active, .dot:hover {
+        height: 15px;
+        width: 15px;
+        margin: 20px 10px;
+    }
+}

@@ -1,0 +1,24 @@
+.li_NavBar{
+    display: inline;
+    text-transform: uppercase;
+}
+.a{
+    color: #FFF4DE;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: solid 3px transparent;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.a:hover{
+    border-left: solid 3px #C6A47E;
+}
+.a:active{
+    background-color: #C6A47E;
+}
+
+@media screen and (max-width: 768px) {
+    .li_NavBar{
+       width: 100%;
+    }
+}

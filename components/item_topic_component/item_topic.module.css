@@ -1,0 +1,17 @@
+.item_topic{
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    width: 50%;
+}
+
+@media screen and (max-width: 1560px) {
+    .item_topic{
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item_topic{
+        width: 80%;
+    }
+}

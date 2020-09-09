@@ -1,0 +1,28 @@
+.slider{
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+circle{
+    cx: 16;
+    cy: 16;
+    r: 21;
+    fill: rgb(198, 164, 126);
+}
+
+@media screen and (max-width: 768px) {
+    .slider{
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .slider{
+        width: 100%;
+        height: 300px;
+    }
+}
